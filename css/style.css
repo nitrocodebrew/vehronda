@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rozha+One&display=swap');
+
+:root {
+
+    /** Typography. */
+    --font-copy: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Corbel', 'Tahoma', sans-serif;
+    --font-headings: 'Rozha One', 'Bodoni 72', 'Didot', 'Georgia', 'Times New Roman', 'Times', serif;
+
+    /** Color palette. */
+    --snow: #fefefe;
+    --stone: #ebede6;
+    --silver: #cccccc;
+    --shadow: #888888;
+    --onyx: #191919;
+    --olive: #577558;
+    --clay: #ac8265;
+    
+}
+
+
 * {
     margin: 0;
     padding: 0;
