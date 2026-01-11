@@ -80,6 +80,11 @@ h1 {
     margin-bottom: 2rem;
 }
 
+h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 2rem;
+}
+
 section {
     padding: 10rem 0;
 }
@@ -106,7 +111,7 @@ section:nth-child(even) {
     z-index: 1;
     border-bottom: 1px solid var(--silver);
     background-color: var(--snow);
-    padding: 1.5rem 0;
+    padding: 1.5rem;
 }
 
 .header-container {
@@ -128,11 +133,56 @@ section:nth-child(even) {
 
 #hero {
     text-align: center;
+    padding-top: 12rem;
 }
 
 .hero-copy {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.hero-cta ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+/**
+ * ===============
+ * Journal section
+ * ===============
+ */
+
+.journal-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+/**
+ * ===========
+ * FAQ section
+ * ===========
+ */
+
+#faq {
+    border-bottom: 1px solid var(--onyx);
+}
+
+/**
+ * ===========
+ * Page footer
+ * ===========
+ */
+
+.page-footer {
+    border-top:4px solid var(--snow);
+    background-color: var(--onyx);
+}
+
+.footer-brand {
+    text-align: center;
 }
 
 
