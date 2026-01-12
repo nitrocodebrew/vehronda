@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-size: 0.7rem;
     font-weight: 700;
+    line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     color: var(--clay);
@@ -84,6 +85,7 @@ h1 {
 h2 {
     font-size: clamp(2rem, 5vw, 4rem);
     margin-bottom: 2rem;
+    line-height: 1.1;
 }
 
 h3 {
@@ -91,11 +93,12 @@ h3 {
 }
 
 h4 {
-    display: inline-block;
-    font-size: 1.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    border-bottom: 3px double var(--silver);
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    border-top: 1px solid var(--silver);
+    border-bottom: 1px solid var(--silver);
+    margin: 4rem 0;
 }
 
 h5 {
@@ -104,6 +107,12 @@ h5 {
 
 p {
     margin: 1.67rem 0;
+}
+
+input, select, button, textarea {
+    font: inherit;
+    border-radius: 12px;
+    padding: 1rem;
 }
 
 section {
@@ -280,13 +289,12 @@ a.services-link:active {
 }
 
 .post-featured {
-    text-align: center;
     border-right: 1px solid var(--silver);
+    padding-right: 3rem;
 }
 
 .post-featured h3 {
     border-bottom: 1px solid var(--silver);
-    margin: 0 3rem;
     padding-bottom: 1rem;
 }
 
@@ -332,15 +340,38 @@ a.read-more:active {
     padding: 2rem;
 }
 
+.newsletter-signup h4 {
+    display: inline-block;
+    border: none!important;
+    margin: 1rem 0;
+}
 
 .newsletter-signup hr {
     height: 1px;
     background: linear-gradient(to left, var(--gray), var(--gray), var(--silver), var(--gray), var(--gray));
 }
 
+.newsletter-signup p,
+address {
+    font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    margin: 3rem 0;
+}
+
 .newsletter-form {
     margin: 2rem 0;
     padding: 1rem;
+}
+
+.newsletter-join-btn {
+    font-size: smaller;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--olive);
+    color: var(--snow);
+    cursor: pointer;
 }
 
 .view-all-link {
@@ -394,6 +425,15 @@ a.view-all:visited {
     opacity: 0.5;
 }
 
+.practitioners-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.practitioners-card {
+    text-align: center;
+}
+
 /**
  * ===========
  * FAQ section
@@ -420,6 +460,10 @@ a.view-all:visited {
 }
 
 
+strong {
+    font-weight: 700;
+    color: var(--onyx);
+}
 .visually-hidden {
     width: 1px;
     height: 1px;
