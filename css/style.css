@@ -85,6 +85,14 @@ h2 {
     margin-bottom: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin: 1.67rem 0;
+}
+
 section {
     padding: 10rem 0;
 }
@@ -125,6 +133,14 @@ section:nth-child(even) {
     gap: 3rem;
 }
 
+.book-now-btn {
+    font-size: 1rem;
+    border-radius: 12px;
+    background-color: var(--onyx);
+    color: #fff;
+    padding: 1rem;
+}
+
 /**
  * ============
  * Hero section
@@ -141,10 +157,101 @@ section:nth-child(even) {
     margin: 0 auto;
 }
 
+.hero-hook {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 4rem 0;
+}
+
 .hero-cta ul {
     display: flex;
     justify-content: center;
     gap: 3rem;
+}
+
+.hero-cta ul li a,
+.hero-cta ul li a:link,
+.hero-cta ul li a:visited {
+    font-size: 1.25rem;
+    color: var(--olive);
+    padding: 1rem;
+}
+
+.hero-cta-primary {
+    border-radius: 12px;
+    border: 2px solid var(--clay);
+    background-color: var(--clay);
+    color: var(--snow)!important;
+}
+
+.hero-cta-secondary {
+    border-radius: 12px;
+    border: 2px solid var(--olive);
+}
+
+#hero h1 span {
+    color: var(--olive);
+}
+
+/**
+ * ================
+ * Services section
+ * ================
+ */
+
+.services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: stretch;
+    margin-top: 4rem;
+}
+
+.services-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: background 0.5s ease-in;
+}
+
+.services-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.services-card a {
+    margin-top: auto;
+}
+
+
+a.services-link,
+a.services-link:link,
+a.services-link:visited {
+    border-radius: 12px;
+    border: 2px solid var(--olive);
+    color: var(--olive);
+    padding: 0.5rem;
+    transition: background  0.5s ease-in;
+}
+
+a.services-link:hover, a.services-link:active {
+    background-color: var(--olive);
+    color: var(--snow);
+}
+
+.services-card-descr {
+    margin-bottom: 2rem;
+}
+
+.services-card hr {
+    height: 1px;
+    background: linear-gradient(to right, var(--stone), var(--stone), var(--silver), var(--stone), var(--stone));
+}
+
+.services-card h3 {
+    font-size: 1.5rem;
 }
 
 
@@ -158,6 +265,18 @@ section:nth-child(even) {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
+}
+
+.post-small:first-child {
+    margin-bottom: 3rem;
+}
+
+.post-category {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--silver);
 }
 
 /**
