@@ -93,11 +93,9 @@ h3 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     text-align: center;
-    letter-spacing: 0.15rem;
-    border-top: 1px solid var(--silver);
-    border-bottom: 1px solid var(--silver);
+    letter-spacing: 0.10rem;
     margin: 4rem 0;
 }
 
@@ -365,8 +363,11 @@ address {
     padding: 1rem;
 }
 
+.newsletter-form input[type="email"] {
+    border: 1px solid var(--stone);
+}
+
 .newsletter-join-btn {
-    font-size: smaller;
     font-weight: 700;
     text-transform: uppercase;
     background-color: var(--olive);
@@ -399,12 +400,24 @@ a.view-all:visited {
     font-size: 1.25rem;
     font-weight: 300;
     text-align: center;
-    margin: 3rem auto;
-    max-width: 800px;
  }
 
  .about-body p strong {
-    font-weight: 400;
+    font-weight: 300;
+ }
+
+ .about-body p:nth-child(2) {
+    border-bottom: 1px solid var(--silver);
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+ }
+
+ .pillars p {
+    border: none!important;
+ }
+
+ .about-values h4 {
+    font-size: 2.5rem;
  }
 
 .about-pillars {
@@ -416,6 +429,20 @@ a.view-all:visited {
 
 .pillar {
     text-align: center;
+    padding: 1.5rem;
+}
+
+.pillar h3 {
+    padding: 0;
+}
+
+.pillar p {
+    font-size: 1.25rem;
+}
+
+.pillar:nth-child(2) {
+    border-left: 1px solid var(--silver);
+    border-right: 1px solid var(--silver);
 }
 
 .about-items-container {
@@ -428,7 +455,13 @@ a.view-all:visited {
 
 .value-item {
     position: relative;
+    border-radius: 12px;
     padding-top: 2rem;
+}
+
+.value-item:nth-child(1),
+.value-item:nth-child(3) {
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .value-number {
@@ -451,6 +484,25 @@ a.view-all:visited {
 }
 
 /**
+ * ===============
+ * Contact section
+ * ===============
+ */
+
+ .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+ }
+
+ .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+ }
+
+
+/**
  * ===========
  * FAQ section
  * ===========
@@ -458,6 +510,12 @@ a.view-all:visited {
 
 #faq {
     border-bottom: 1px solid var(--onyx);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 6rem;
 }
 
 /**
